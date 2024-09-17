@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Student Feedback Survey</h1>
+        <p class="form-description">We value your feedback! Please take a moment to complete this survey.</p>
+        <form class="survey-form">
+            <!-- Student Information -->
+            <div class="form-group">
+                <label for="student-name">Name</label>
+                <input type="text" id="student-name" name="student-name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="student-email">Email</label>
+                <input type="email" id="student-email" name="student-email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="student-course">Course Enrolled</label>
+                <input type="text" id="student-course" name="student-course" placeholder="Enter your course" required>
+            </div>
+
+            <!-- Rating Section -->
+            <div class="form-group">
+                <label for="course-rating">Rate the Course (1 to 5)</label>
+                <select id="course-rating" name="course-rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+
+            <!-- Feedback Section -->
+            <div class="form-group">
+                <label for="feedback">Please provide your feedback</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback here" required></textarea>
+            </div>
+
+            <!-- Suggestions -->
+            <div class="form-group">
+                <label for="suggestions">Suggestions for Improvement</label>
+                <textarea id="suggestions" name="suggestions" rows="3" placeholder="Your suggestions"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

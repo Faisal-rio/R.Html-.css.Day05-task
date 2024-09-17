@@ -1,0 +1,126 @@
+/* Basic Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #2c3e50; /* Darker color for better contrast */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Section Styles */
+
+section {
+    padding: 2rem;
+}
+
+.grid-section, .flexbox-section {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-section h2, .flexbox-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Grid Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Flexbox Layout */
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    text-align: center;
+    flex: 1 1 150px;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+.flex-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #2c3e50; /* Matching header color */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+/* Responsive Styles */
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    section {
+        padding: 1rem;
+    }
+    
+    .grid-item, .flex-item {
+        padding: 1rem;
+        margin: 0.5rem; /* Less margin for smaller screens */
+    }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 601px) and (max-width: 900px) {
+    .grid-item, .flex-item {
+        padding: 1.5rem;
+        margin: 1rem; /* Adjusted margin for tablets */
+    }
+}
+
+/* Large Laptops and Desktops */
+@media (min-width: 901px) {
+    .grid-item, .flex-item {
+        padding: 2rem;
+        margin: 1rem; /* Normal margin for larger screens */
+    }
+}
